@@ -1,0 +1,25 @@
+L 1,L 2,Almora,Bageshwar,Chamoli,Champawat,Dehra Dun,Haridwar,Nainital,Pauri Garhwal,Pithoragarh,Rudra Prayag,Tehri Garhwal,Udham Singh Nagar,Uttarkashi,Grand Total
+Agriculture,Crop land,1287.02,310.42,666.59,370.09,684.44,1294.85,757.40,930.66,409.86,231.44,631.71,1574.71,530.46,9679.65
+Agriculture,Current Shifting cultivation,,,,,,,,,,,,,,
+Agriculture,Fallow,9.03,56.48,5.32,5.84,38.77,75.11,84.36,173.34,91.96,36.31,221.50,50.49,75.52,924.04
+Agriculture,Plantation,1.53,0.18,,,31.14,93.31,16.36,3.25,0.62,,0.29,28.53,,175.21
+Barren/unculturable/ Wastelands,Barren Rocky,,56.48,793.39,0.06,0.19,,1.16,0.64,1023.43,61.95,5.29,,1293.76,3236.36
+Barren/unculturable/ Wastelands,Gullied / Ravinous,,,,,,,,,,,,,0.06,0.06
+Barren/unculturable/ Wastelands,Rann,,,,,,,,,,,,,,
+Barren/unculturable/ Wastelands,Salt Affected Land,,,,,,,,,,,,,,
+Barren/unculturable/ Wastelands,Sandy Area,1.21,1.25,1.05,0.51,3.63,13.72,7.91,8.39,0.21,4.66,0.87,2.30,3.53,49.25
+Barren/unculturable/ Wastelands,Scrub Land,77.87,57.33,54.12,30.48,176.30,59.37,81.19,211.60,241.01,12.83,53.29,49.79,78.73,1183.90
+Builtup,Mining,0.05,3.74,0.45,,2.54,11.63,0.12,0.48,0.45,0.02,1.19,5.61,,26.29
+Builtup,Rural,6.13,2.64,3.89,0.89,22.05,50.25,9.65,20.18,5.78,1.66,9.96,70.37,8.34,211.81
+Builtup,Urban,8.06,1.81,5.63,4.91,134.83,73.36,58.54,29.75,12.96,0.91,5.72,72.89,3.23,412.58
+Forest,Deciduous,300.76,52.52,94.64,349.36,994.68,339.10,1565.24,1804.98,62.86,26.85,281.10,355.09,50.60,6277.77
+Forest,Evergreen / Semi Evergreen,1322.79,1228.94,2464.63,849.84,715.75,6.66,792.27,1404.43,1751.27,833.66,1922.98,3.79,2863.00,16160.03
+Forest,Forest Plantation,0.03,,,,17.50,109.57,481.73,15.95,,,0.10,167.26,0.05,792.18
+Forest,Scrub Forest,88.40,75.43,138.49,104.14,82.04,65.96,175.83,529.09,425.09,40.24,153.46,35.14,175.24,2088.55
+Forest,Swamp / Mangrove,,,,,,,0.11,,,,,7.05,,7.17
+Grass / Grazing,Grass / Grazing land,4.91,135.09,1177.53,4.23,52.87,,,3.05,1203.58,283.36,82.57,0.03,857.08,3804.28
+Snow and Glacier,Snow,,246.82,2578.46,,,,,,1774.47,438.69,218.27,,1971.03,7227.74
+Wet lands / Water bodies,Coastal Wetland,,,,,,,,,,,,,,
+Wet lands / Water bodies,Inland Wetland,,,,,0.05,,,,,,,0.05,,0.10
+Wet lands / Water bodies,River / Stream / Canals,26.21,20.84,45.75,45.61,130.30,165.94,177.95,115.02,87.49,11.25,27.46,77.58,99.10,1030.50
+Wet lands / Water bodies,Waterbodies,,0.00,0.06,0.04,0.92,1.21,6.17,76.19,0.27,0.17,26.23,78.32,6.29,195.88

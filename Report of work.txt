@@ -1,0 +1,488 @@
+DAY-1  
+  14-05-2026
+ Created the folder Named as: GeoSpatial Analysis and Transformations and stored it on the desktop.
+   Now created a new folder named "raw data" inside to store all the datasets.
+   Downloaded Statistics data:  
+   Resources are:
+            https://bhuvan-app1.nrsc.gov.in/thematic/thematic/index.php
+            Bhuvan Store
+			https://bhuvan.nrsc.gov.in/ngmaps/thematic?theme1=LULC250K_2425&tlp=raster&state=ALL#4.18/22.75/82.8
+
+        Using the Land Use Land Cover 50k for all the states and Union territories.
+		
+     from 2005-2006 :
+	 Downloaded and stored it in the folder: "data from 2005-2006" inside the raw data folder.
+	   1. Union Territories (All)
+        Columns are:	   
+	        1. Andaman
+			2. Nicobar
+			3. Delhi
+			4. Chandigarh
+			3. Diu
+			4. Daman 
+			5. Lakshadweep
+			6. Yanam
+			7. Puducherry
+			8. Mahe
+			9. Karaikal
+			10. Dadra&nager
+			11. UT total
+	   2. Andhra Pradesh
+	   3. Arunachal Pradesh
+	   4. Assam 
+	   5. Bihar
+	   6. Chattishgarh
+	   7. Goa
+	   8. Gujarat
+	   9. Haryana
+	   10. Himachal Pradesh
+	   11. Jammu Kashmir
+	   12. Jharkhand
+	   13. Karnataka
+	   14. Kerala
+	   15. Madhya Pradesh
+	   16. Maharastra
+	   17. Manipur
+	   18. Meghalaya
+	   19. Mizoram
+	   20. Nagaland
+	   21. Odisha
+	   22. Punjab
+	   23. Rajasthan
+	   24. Sikkim
+	   25. Tamil Nadu
+	   26. Tripura
+	   27. Uttarakhand
+	   28. Uttar Pradesh
+	   29. West Bengal
+	
+    Total files: 29
+		
+	 from 2011-2012
+	 	 Downloaded and stored it in the folder: "data from 2011-2012" inside the raw data folder.
+	   1. Union Territories (All)
+        Columns are:	   
+	        1. Andaman
+			2. Nicobar
+			3. Delhi
+			4. Chandigarh
+			3. Diu
+			4. Daman 
+			5. Lakshadweep
+			6. Yanam
+			7. Puducherry
+			8. Mahe
+			9. Karaikal
+			10. Dadra&nager
+			11. Grand Total
+	   2. Andhra Pradesh(AP+TS)
+	   3. Arunachal Pradesh
+	   4. Assam 
+	   5. Bihar
+	   6. Chattishgarh
+	   7. Goa
+	   8. Gujarat
+	   9. Haryana
+	   10. Himachal Pradesh
+	   11. Jammu Kashmir
+	   12. Jharkhand
+	   13. Karnataka
+	   14. Kerala
+	   15. Madhya Pradesh
+	   16. Maharastra
+	   17. Manipur
+	   18. Meghalaya
+	   19. Mizoram
+	   20. Nagaland
+	   21. Odisha
+	   22. Punjab
+	   23. Rajasthan
+	   24. Sikkim
+	   25. Tamil Nadu
+	   26. Tripura
+	   27. Uttarakhand
+	   28. Uttar Pradesh
+	   29. West Bengal  
+
+    Total files: 29
+	
+	
+	 from 2015-2016
+	 	 Downloaded and stored it in the folder: "data from 2015-2016" inside the raw data folder.
+	   1. Union Territories (All)
+        Columns are:	   
+	        1. Andaman
+			2. Nicobar
+			3. Delhi
+			4. Chandigarh
+			3. Diu
+			4. Daman 
+			5. Lakshadweep
+			6. Yanam
+			7. Puducherry
+			8. Mahe
+			9. Karaikal
+			10. Dadra&nager
+			11. Grand Total
+	   2. Andhra Pradesh
+	   3. Arunachal Pradesh
+	   4. Assam 
+	   5. Bihar
+	   6. Chattishgarh
+	   7. Goa
+	   8. Gujarat
+	   9. Haryana
+	   10. Himachal Pradesh
+	   11. Jammu Kashmir
+	   12. Jharkhand
+	   13. Karnataka
+	   14. Kerala
+	   15. Madhya Pradesh
+	   16. Maharastra
+	   17. Manipur
+	   18. Meghalaya
+	   19. Mizoram
+	   20. Nagaland
+	   21. Odisha
+	   22. Punjab
+	   23. Rajasthan
+	   24. Sikkim
+	   25. Tamil Nadu
+	   26. Telangana
+	   27. Tripura
+	   28. Uttarakhand
+	   29. Uttar Pradesh
+	   30. West Bengal  
+
+    Total files: 30
+
+
+Note: 1. Almost all of these files has either grand total(for states) or UT total(for union territories pdf). Just to be sure, need a small function to fing the grand total and append it at the last of csv.
+	  2. Numerical data is the area covered in sq. km.
+
+After some mathematical analysis of whole andhrapradesh and telangana data, 3 conclusions are drawn: 
+ 1. 2005-06 : Andhrapradesh had ts srea data since no partition then.
+ 2. 2011-2012 : Only AP data no ts data. so ts data is needed.
+ 3. 2015-2016 : Had both TS and AP data separately. 
+ 
+	  
+Installed python 3.xx version and it's extensions in vscode
+created a new file named "converttotables.py" and wrote the code which "could" change the pdf to csv format with precise rows and columns.
+created a new folder named "refined data" to store the output of python fie i.e., the csv files derived from the statistics of each state.
+installed necessary libraries panda, pdfplumber etc..
+
+
+
+Day 2
+   15-05-2026
+
+ for transforming the data that is avaliable on the pdf to the cvs format:
+    two options are ther 1: rows and columns are to be swapped keeping the data inplace related to the swapping. 
+	                           this causes the districts and their data to be on rows and the repetitive features for all of districts will be on columns.
+                         	 and then if the pdf has one or more pages then we need to append the data at the last.
+						 2: No need to change the rows and columns but if the pdf has more than one page of data, need to append the un repetetive data on the right side.
+						     this looks like districts are on columns and the rows will be the features that we need to analyze.
+							 
+ Q) What is better? option 2 is better because it reduces computation. Readability is better for 1 but can be re written for 2 similar to 1.
+ 
+	
+import the files os, re, pdfplumber,pandas.
+	os: used for handling folders and file paths.
+	   functions used here:
+	        1. os.listdir() : reads files and folders.
+			2. os.path.join() : creates proper file paths.
+			3. os.makedirs() : creates folders automatically.
+            4. os.path.isdir() : checks whether a path is a folder. Prevents the loss of files.
+	re: used for regular expressions and text cleaning. identify patterns in extracted text and repair broken values from PDFs.
+       functions used here:
+            1. re.sub() :  removes extra spaces that were created in making files.
+            2. re.match() : checks the text patterns. 
+            3. re.search() : finds the patterns inside strings inside the table. 			
+    pdfplumber: used to extract tables from PDF pages. It is the main extraction library here.
+	    functions used here:
+		    1. pdfplumber.open() : opens PDF files.
+			2. page.extract_tables() : extracts table data from pages.(only table data)
+	pandas: used for dataframe operations such as cleaning, merging, filtering, and exporting data.
+	    functions used here:
+		    1. pd.DataFrame() :  creates the table.
+			2. pd.merge() : merges the pages together.
+			3. drop_duplicates() : removes the repetetive or duplicate rows. 
+			4. to_csv() : exports the final csv files.
+ 
+Important functions:
+
+def normalize_text(): compare similar labels consistently.
+ This function standardizes text by:
+    1. converting to lowercase
+    2. removing extra spaces
+    3. removing line breaks
+
+def standardize_keys(): ensures all `L 1` and `L 2` values remain consistent across every CSV file.
+    A global dictionary called `MASTER_KEYS` stores the first valid version and reuses it everywhere.
+
+def fix_split_cells(): detects the split cells, which are created when pdf extraction, merges them correctly.
+    uses regex pattern matching to identify broken text.
+	
+def normalise_key_cols(): ensures the first two columns are always:
+ L1 and L2 that are in the data.
+
+It also handles: blank headers, shifted columns, duplicate column names.
+
+def extract_page(): extracts tables from a single PDF page.
+
+work flow:
+
+1. Extract tables
+2. Select the largest table
+3. Fix split cells
+4. Clean headers
+5. Convert to dataframe
+
+def forward_fill_l1(): In many PDF tables, repeated category names are left blank. Hence missing values are filled using the previous category values.
+
+def clean_l2(): cleans l2 on removing extra spaces etc..
+
+def drop_empty_rows(): Removes rows where `L 2` is empty because such rows usually contain noise.
+
+def clean_page(): Combines all cleaning functions into one pipeline.
+
+def merge_pages(): merges all pages into one final dataframe using pd.merge() with L1 and L2 as common keys.
+
+def process_pdf(): the main function that controls the full workflow.
+
+Algorithm:
+
+1. Open PDF
+2. Read pages
+3. Extract tables
+4. Clean data
+5. Standardize labels
+6. Merge pages
+7. Remove duplicates
+8. Return final dataframe
+
+
+Note: Count of columns are done including the "Grand_Total"
+
+
+
+
+DAY-3
+  18-05-2026.
+
+Need to find the features that are depending on each other.
+
+Installed the libraries matplotlib, seaborn, scipy.
+
+Almost completed the approach2foranalysis.py. 
+
+Note: Himachal Pradesh data from 2015-16 does not have L1 and L2 in it's second page.
+      Uttarakhand from 2005-2006 folder does not have L1 and L2 in it's second page.  Hence need to process it differently to ensure no loss of data.
+
+Hence need to change the converttotables code accordingly.
+After the updates in the HP and U, need to redo the approach analysis..
+
+
+
+
+DAY-4
+  19-05-2026.
+  
+Redone the converttotables file since two files are having different kind of tables.
+Corrected the indentation errors and fixed the bugs.
+
+Checked whether approach2foranalysis gives right results or not. 
+For Now: appraoch2foranalysis is checking the states from 2005-2006 csv files and only checking those in other csv files. 
+      As for 2005-2006 has both AP and TS data and other 20011-12 and 2015-16 has separate AP data it was not checking whether TS exists in other files after the partition. 
+	  And also it checks and stores data based on the names. Hence it is difficult for AP and TS datas to exist.
+	  For AP, use 2011-12 data specifically since it has full separate data from then and TS doesnot have any so for TS, temporarily implement the new separate data of 2015-16.
+
+
+
+DAY-5
+   20-05-2026.
+ 
+used this : https://github.com/datta07/INDIAN-SHAPEFILES/blob/master/INDIA/INDIA_STATES.geojson
+ to download the india json part for demonstarion of india in an interactive way.
+ 
+ Created 2 folders
+    1. GeoSpatial Analysis_Analysis Part : This is full analysis file that will have the overall analysis and the data.
+	2. GeoSpatial Analysis and Transformations : This is for just the deployment and cretaing the interactive file part. This will have both the app.py files. 
+	                                              Hence there will be two kinds of visualization.
+Downaloaded the Streamlit application where we can do the local deployment via app.py code. 
+
+
+Approach2 python file: This file just does the analysis the operator can understand not the actual part. 
+                        Need to do some clear diagrams and visualization so that anyone can understand.												  
+
+Used this:   https://www.thoughtspot.com/data-trends/data-visualization/types-of-charts-graphs
+ For visualization purpose.
+
+
+DAY-6
+   21-05-2026.
+ Note:
+    AndhraPradesh data from 2005-06 has both Ap and TS data. SO using Excel sheet, The districts were separated and now we got the data of both AP and TS separately.
+	2. We needed TS data from 2011-12 only.
+	
+	Based on the yesterday's analysis on what graphs will be helpful, 
+	 For state wise:
+1. Total area of L1 category and it's changes from past and current recent year full analysis
+2. Percentage change heatmap just recent data and just previous data
+3.  Ward clustered data of very recent year data
+4. Stacked bar 
+5. Dominated categry
+
+For district wise analysis:
+
+1. Time series for district (just like now doing in the code)
+2. Some kind of bargraph for a district where for L1 it shows how much is increased( one in numbers and other in percentages) Gain or loss both has to be specified. 
+          And for L2 inside L1 it shows what has changed (both numbers and %)
+		  
+So now needed to split this into state analysis and district analysis so that we can clearly see how it's working..
+Tried splitting and got stateAnalysis.py and DistrictAnalysis.py... State one works good but the District one needs some changes.
+
+https://www.scribbr.com/statistics/pearson-correlation-coefficient/
+https://en.wikipedia.org/wiki/Pearson_correlation_coefficient
+https://medium.com/@abhilashagulhane111/data-science-p-value-t-value-interpretation-for-regression-model-ba0717855d76
+
+
+DAY-7
+   22-05-2026
+   DistrictAnalysispython file is changed. Found that plot 1 time series on overall land is not working, implemented new graph:
+   1. Stacked bars in time series (removed since no big changes)
+   2. Bar graph   
+   
+   Scatter plots code is altered and hence it generates now only the 2011-12 vs 2015-16.
+   parallelly updated the app.py and app1.py
+   
+DAY-8 
+   24-05-2026
+   Need to work on QGIS. Currenlty we had 3 layers of timeseries 2005-06, 2011-12, 2015-16 data of Madhya Pradesh. 
+   
+   Need:
+    to know What land changes to what is more needed to know from here. 
+    Then from here, apply  everywhere all over india. i.e., integrate it with all the states of INDIA.
+   to know which socio economic events can cause these land transformations.
+   to know whether we can use the LGD State codes here? and if yes the how?
+   to use the LC-webcodes for the LULC analysis in QGIS.
+   
+   
+DAY-9
+  25-05-2026.
+  The actual layers are in the polygon vector form so then we can change then into raster and do the raster calculations and find what data changed into what.
+  Use rater>coversion>vector to raster conversion.
+  Made copies of files totest and work on these. 
+  File names and attribute names:
+  lulc-MP_LULC50K_0506  :
+       DESCR_1
+	   DESCR_2
+	   LU_Webcode
+	   Area
+  lulc-MP_LULC50K_1112 :
+       DESCR_1
+	   DESCR_2
+	   LU_Webcode
+	   Area
+  lulc-MP_LULC50K_1516 :
+       DIST_OFF
+	   DESCR_1
+	   DESCR_2
+	   LU_Webcode
+	   area_norm
+	   Shape_leng
+	   Shape_Area
+  Copies do have same data
+  
+  Used Processing tools(Refactor fields) for changing the LU_Webcode format from strings to integer(32bits)
+  Then changed the vector polygon layers into lasterlayers by conversion with using LU_Webcode and height and width as 0.0005 units and the 
+  extended output is chosen from the reactored layer. Saved into C:\LULC\ as tif files.
+  Did these for all the files after crearting the copies of them.
+   Now, used the raster calculator to get the change between the time periods. 
+   Used the formula "Layer1@1"*100+"Layer2@1" 
+    this gives the conversion between the LU_Webcodes 402 is LUcode from 4 to 2 change.
+	
+	Did this for 0506-1112, 1112-1516, 0506-1516.
+	
+	Go through Processing toolbar and search for Raster layer unique value report 
+	Chosen the changes raster file and saved the table in csv form.
+	
+	Then used the formula "Layer1@1" !="Layer2@1" 
+	  This creates a binary map from 1 to 2 to detect the change. 
+	  If change then 1 if no then 0.
+	  Saved this in C:\LULC\ under the name NetChange.
+	  
+	 LU_Webcode and L1,L2
+    1        Buildup>Urban
+    2        Buildup>Rural
+    3        Buildup>Mining
+    4       Agriculture>Cropland	
+	5       Agriculture>Plantation
+	6       Agriculture>Fallow
+	9           Forest>Decidious
+	10          Forest>Forest Plantation
+	11          Forest>Scrub Forest
+	13      Grass-Grazing>Grass-Grazing
+	15     Barren/unculturable/Wastelands>Gullied/Ravinousland
+	16     Barren/unculturable/Wastelands>Scrubland
+	17     Barren/unculturable/Wastelands>Sandyland
+	18     Barren/unculturable/Wastelands>Barren Rocks
+	22       Wetlands/Waterbodies> River/stream/canals
+	23       Wetlands/Waterbodies>Waterbodies
+	 
+  
+  For relating the GSDP in current prices with the LULC data :
+    Used the https://www.mospi.gov.in/sites/default/files/press_releases_statements/statewise_sdp1999_2000_9sep10.pdf   for the 2005-06 data.
+	        https://mospi.gov.in/sites/default/files/press_releases_statements/State_wise_SDP_as_on_15032024.xls  for the 2011-12 and 2015-16 data.
+			NDAP NITI AAYOG hadn kind of GSDP data.
+			
+		Prepared the csv with these with columns ad states, 2005-06, 2011-12, 2015-16. These are from the Current Prices.
+		
+		Relating GSDP and the LULC raster changes csv data:
+		   references can be used: https://www.tandfonline.com/doi/full/10.1080/07038992.2024.2377641#d1e164
+		   
+        
+DAY-10
+   26-05-2026
+   
+   Wrote changeraster.py so that we can see whether the statistics and the raster data are hand in hand or not.
+   Wrote ReplaceLUcode.py so that it adds L1 code L2 
+   
+   ref: https://www.statisticstimes.com/economy/country/india-gdp-sectorwise.php
+        https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2039218&reg=3&lang=2
+		https://www.pmfias.com/land-reforms-in-india/
+		https://landportal.org/library/resources/draft-national-land-reform-policy
+		https://mospi.gov.in/sites/default/files/publication_reports/Brochure_2024.pdf
+		https://en.wikipedia.org/wiki/Rann_of_Kutch#HeroSection
+		https://www.geeksforgeeks.org/social-science/types-of-soil-sandy-soil-clay-soil-silt-soil-and-loamy-soil/
+		https://en.wikipedia.org/wiki/Mangrove_forest
+        https://prepp.in/news/e-492-inland-wetlands-environment-notes#Initiatives
+		https://www.nrsc.gov.in/nrscnew/assets/pdf/landproducts/forest_type.pdf
+		Chen, Q., Hou, X., Zhang, X., and Ma, C. 2016. “ImprovedGDP spatialization approach by combining land-use dataand night-time light data: 
+		A case study in China’s con-tinental coastal area.” International Journal of RemoteSensing, Vol. 37(No. 19): pp. 4610–4622. doi:10.1080/01431161.2016.1217440
+		link: https://www.tandfonline.com/doi/full/10.1080/01431161.2016.1217440
+		
+DAY-11
+    27-05-2026
+	Wrote GsdpTrends.py for seeing the change in gsdp trends of a particular state
+		tansitions.py for seeing the trends in changes of the csv files we have decoded.
+		
+	For the frontend part the resources are:
+	    https://www.nutrient.io/guides/web/viewer/images/
+		https://geotiffjs.github.io/geotiff.js/index.html#3-accessing-filedirectory-properties
+		
+	Got Haryana and Uttar Pradesh shape files. Converted them into raser files and had performed the changes. Has saved them in the csv.
+	    Also applied and got the decoded version of the raster changes that has been performed.
+		
+		
+NEEDS:
+    1. Represent the shape files and the tif files in the web page so that it wil;l be easier for launching.
+	2. for the first page there will be the whole map of india and then on the left we will be having the drop down menu of the states,districts. 
+	3. Scatterplot needs to be represented in a abetter way like, user chooses the L1 and the L2 and the year vs year. Then the scatter plot appears.
+	 For every state there are all the scatterplots hence for selected it will show some. if not selected it shows none. if scastter plot l1l2 is selected then even if the yearvsyear is not selected the graphs of l1l2 will be shown.
+    4. There should be some text embedded with other page link on the below of all the choices.
+    5. On clicking, we will be seen the only 3 states MP, UP, HR tiff files on the right sharing the borders as layered.
+    6. Along with that, on left there is a state choosing option where user cann choose one of the states and the changes happend from year to to years are also be able to chosen.
+	7. After choosing those, these values will be loaded to some py file where it takes these values and gives some achtual changes from one class of L1L2 to other different class of L1L2.
+	8. Then in the same page the gsdp of those particular state trend is shown. so that the relation between the gsdp and the LULC is to be known.
+    

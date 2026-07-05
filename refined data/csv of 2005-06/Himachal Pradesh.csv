@@ -1,0 +1,25 @@
+L 1,L 2,Bilaspur,Chamba,Hamirpur,Kangra,Kinnaur,Kullu,Lahul and Spiti,Mandi,Shimla,Sirmaur,Solan,Una,Grand Total
+Agriculture,Crop land,396.72,563.75,424.91,1567.26,18.00,137.50,55.86,874.44,660.80,763.72,575.56,591.33,6629.85
+Agriculture,Current Shifting cultivation,,,,,,,,,,,,,
+Agriculture,Fallow,,,,,,,,,1.27,,0.24,,1.51
+Agriculture,Plantation,3.85,115.31,9.31,120.74,152.84,519.31,53.17,362.88,674.44,124.23,26.28,1.75,2164.11
+Barren/unculturable/ Wastelands,Barren Rocky,1.71,576.37,,58.11,785.73,359.27,4524.03,20.01,43.36,18.07,13.10,15.67,6415.43
+Barren/unculturable/ Wastelands,Gullied / Ravinous Land,50.07,,16.78,6.32,,,,13.82,,4.94,18.41,33.50,143.84
+Barren/unculturable/ Wastelands,Rann,,,,,,,,,,,,,
+Barren/unculturable/ Wastelands,Salt Affected Land,,,,,,,2.47,,,,,,2.47
+Barren/unculturable/ Wastelands,Sandy Area,5.53,2.03,1.81,0.31,10.84,0.07,,0.14,0.05,0.56,0.74,3.38,25.45
+Barren/unculturable/ Wastelands,Scrub Land,141.98,444.76,317.01,,148.45,189.82,97.25,596.71,380.37,179.20,229.93,181.02,3646.94
+Builtup,Mining,0.86,,,0.57,,0.32,,2.67,,4.20,2.79,,11.42
+Builtup,Rural,12.09,22.16,22.64,110.58,14.33,22.01,6.66,44.07,48.27,27.67,26.29,43.88,400.64
+Builtup,Urban,5.36,8.02,9.37,38.16,2.56,12.61,0.51,10.62,24.58,17.48,51.27,24.20,204.74
+Forest,Deciduous,247.27,119.88,46.90,333.66,13.01,33.42,46.58,149.41,13.23,368.81,493.00,458.11,2323.28
+Forest,Evergreen/Semi evergreen,47.89,2089.28,191.54,1510.08,635.48,1976.72,150.65,1183.77,2275.66,824.85,210.98,1.94,11098.84
+Forest,Forest Plantation,,0.77,,0.76,0.50,,3.76,,,,0.03,,5.83
+Forest,Scrub Forest,41.16,225.52,18.97,141.28,18.49,109.69,37.33,200.47,128.43,154.77,99.51,47.29,1222.92
+Forest,Swamp / Mangroves,,,,,,,,,,,0.32,,0.32
+Grass / Grazing,Grass / Grazing,87.52,1625.83,14.36,316.93,2007.90,770.32,2804.87,380.90,722.70,259.83,155.51,4.83,9151.49
+Snow and Glacier,Snow and Glacier,,643.29,,335.20,2531.23,1316.51,5838.43,,118.84,1.23,,,10784.74
+Wet lands / Water bodies,Coastal Wetland,,,,,,,,,,,,,
+Wet lands / Water bodies,Inland Wetland,,,,4.99,,0.09,1.49,,,0.26,0.04,0.86,7.73
+Wet lands / Water bodies,River/Stream/Canals,17.24,81.49,44.38,191.00,60.96,55.25,209.19,108.15,38.73,74.23,32.02,92.23,1004.87
+Wet lands / Water bodies,Water bodies,107.75,9.54,0.00,262.61,0.67,0.09,2.74,1.94,0.27,0.95,,40.03,426.59

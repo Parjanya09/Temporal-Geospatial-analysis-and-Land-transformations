@@ -1,0 +1,25 @@
+L 1,L 2,Amritsar,Bathinda,Faridkot,Fatehgarh Sahib,Firozpur,Gurdaspur,Hoshiarpur,Jalandhar,Kapurthala,Ludhiana,Mansa,Moga,Muktsar,Nawan Shehar,Patiala,Rupnagar,Sangrur,Grand Total
+Agriculture,Crop land,4590.19,2928.29,1333.14,1091.64,5276.70,2906.16,2036.06,2358.67,1440.65,3177.04,1953.40,1560.34,2350.80,1020.60,3160.16,1338.36,4646.86,43169.08
+Agriculture,Current Shifting cultivation,,,,,,,,,,,,,,,,,,
+Agriculture,Fallow,0.27,2.20,,0.13,4.72,0.98,4.53,3.83,0.65,2.00,1.64,0.18,1.27,0.93,2.64,1.83,0.31,28.11
+Agriculture,Plantation,15.06,8.42,3.22,0.92,69.39,12.87,346.58,5.12,3.11,22.76,1.90,0.68,11.22,25.45,10.05,25.88,4.74,567.39
+Barren/unculturable/ Wastelands,Barren Rocky,,,,,,,,,,,,,,,,,,
+Barren/unculturable/ Wastelands,Gullied / Ravinous Land,5.72,,,,,12.63,2.75,0.16,0.08,,,,,2.07,7.36,7.48,,38.25
+Barren/unculturable/ Wastelands,Rann,,,,,,,,,,,,,,,,,,
+Barren/unculturable/ Wastelands,Salt Affected Land,0.88,0.57,0.78,,22.02,0.23,0.59,,2.25,,,0.08,17.31,,11.67,2.80,0.26,59.45
+Barren/unculturable/ Wastelands,Sandy Area,10.29,122.71,7.08,,95.50,9.54,13.64,5.28,2.27,17.69,62.24,1.89,50.85,5.52,3.62,3.65,26.62,438.38
+Barren/unculturable/ Wastelands,Scrub Land,11.36,7.94,1.65,1.78,18.92,33.08,69.88,6.88,9.50,22.74,1.87,3.67,4.43,13.25,35.64,93.47,3.97,340.04
+Builtup,Mining,1.35,2.17,0.31,1.75,1.04,5.77,5.59,1.43,1.57,10.76,0.24,1.48,0.29,0.93,6.36,4.51,3.00,48.56
+Builtup,Rural,164.90,132.74,44.70,37.28,146.64,107.19,100.99,80.58,39.38,162.88,76.94,64.58,82.31,49.63,113.07,73.29,181.46,1658.56
+Builtup,Urban,164.46,148.44,43.34,30.03,99.10,99.59,53.25,157.82,56.07,268.04,26.34,21.22,29.64,19.30,159.02,94.38,96.91,1566.95
+Forest,Deciduous,20.73,18.73,12.15,3.45,17.67,195.68,564.53,5.51,6.64,23.79,8.05,2.74,9.13,94.15,70.06,362.77,12.50,1428.29
+Forest,Evergreen/Semi evergreen,,,,,,12.72,,,,,,,,,,0.03,,12.75
+Forest,Forest Plantation,0.14,,,,,,11.97,,0.35,0.15,,,,0.24,0.26,3.10,,16.20
+Forest,Scrub Forest,2.17,,7.69,,0.00,5.06,20.44,,0.18,0.04,,,,6.96,2.34,24.29,,69.18
+Forest,Swamp / Mangroves,,,,,,,,,,,,,,,,,,
+Grass / Grazing,Grass / Grazing,,,,,,,,,,,,,,,,,,
+Snow and Glacier,Snow and Glacier,,,,,,,,,,,,,,,,,,
+Wet lands / Water bodies,Coastal Wetland,,,,,,,,,,,,,,,,,,
+Wet lands / Water bodies,Inland Wetland,19.90,,3.90,0.26,14.04,31.54,9.87,,24.79,0.86,0.44,,19.01,,0.05,0.91,,125.55
+Wet lands / Water bodies,River/Stream/Canals,77.62,24.04,12.71,8.29,83.67,114.84,66.08,16.49,39.59,49.03,11.53,13.21,28.12,18.59,42.15,76.96,34.13,717.04
+Wet lands / Water bodies,Water bodies,2.96,4.74,1.31,1.45,3.59,22.11,3.23,1.23,5.91,4.22,5.42,1.92,3.64,0.38,2.54,3.30,10.24,78.20
